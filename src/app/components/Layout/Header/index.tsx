@@ -86,18 +86,12 @@ const Header: React.FC = () => {
       <div>
         <div className="container flex items-center justify-between">
           <Logo />
-          <nav className="hidden lg:flex grow items-center gap-3 xl:gap-4 justify-center">
+          <nav className="hidden lg:flex grow items-center gap-6 xl:gap-8 justify-center">
             {navLink.map((item, index) => (
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <Link
-              href="/join-movement"
-              className="hidden lg:block bg-primary text-white hover:bg-primary/80 py-2 px-6 rounded-full text-base font-medium whitespace-nowrap"
-            >
-              Join the movement
-            </Link>
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
               className="block lg:hidden p-2 rounded-lg hover:cursor-pointer"
