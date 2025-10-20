@@ -9,7 +9,7 @@ const CEO = () => {
           {/* Left: Text */}
           <div className="flex-1">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              THE MESSAGE FROM THE CEO and FOUNDER
+              MESSAGE FROM THE CEO and FOUNDER
             </h2>
             <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4">
               <p>

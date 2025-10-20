@@ -18,11 +18,22 @@ const Hero = () => {
             textShadow: "0 2px 8px rgba(0,0,0,0.5)",
           }}
         >
-          AAUCo - GLOBAL UNIVERSITY INCUBATOR
+          <span
+            className="block text-6xl md:text-9xl font-extrabold"
+            style={{ letterSpacing: "0.3em" }}
+          >
+            AAUCo
+          </span>
+          <span
+            className="block text-3xl md:text-5xl font-bold mt-2"
+            style={{ letterSpacing: "0.2em" }}
+          >
+            GLOBAL UNIVERSITY INCUBATOR
+          </span>
         </h1>
         <p
-          className="text-white mt-4 text-xl md:text-2xl font-medium"
-          style={{ letterSpacing: "0.5em" }}
+          className="text-white mt-7 text-xl md:text-2xl font-medium"
+          style={{ letterSpacing: "0.3em" }}
         >
           WHERE LEGACY BEGINS AND FUTURES ARE INCUBATED
         </p>
