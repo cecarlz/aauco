@@ -1,20 +1,12 @@
 "use client";
 import Image from "next/image";
-import axiosImg from "/public/images/documentation/axios.svg";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
 import { DocNavigation } from "./DocNavigation";
 
 export const Introduction = () => {
   const [docNavbarOpen, setDocNavbarOpen] = useState(false);
-  const PackageVersions = [
-    {
-      id: "1",
-      packageName: "Axios",
-      img: axiosImg,
-      version: "latest",
-    },
-  ];
+  const PackageVersions = [];
   return (
     <>
       <div id="version" className="md:scroll-m-[180px] scroll-m-28">
@@ -36,25 +28,7 @@ export const Introduction = () => {
         </div>
 
         <div className="w-full flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-6 rounded-md border border-dark_border border-opacity-60">
-          {PackageVersions &&
-            PackageVersions.map((item) => {
-              return (
-                <div
-                  key={item.id}
-                  className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-dark_border border-opacity-60"
-                >
-                  <Image
-                    src={item.img}
-                    alt="npm-package"
-                    className=" mx-auto w-10 h-10 "
-                  />
-                  <h5 className="text-2xl font-bold mt-3.5 text-black">{`v${item.version}`}</h5>
-                  <p className="text-base font-medium text-muted">
-                    {item.packageName}
-                  </p>
-                </div>
-              );
-            })}
+          {/* No packages to show */}
         </div>
         <div className="mt-5">
           <p className="text-base font-medium text-muted text-opacity-60">
