@@ -9,11 +9,11 @@ const CEO = () => {
           {/* Left: Text */}
           <div className="flex-1 max-w-3xl">
             <div className="mb-8">
-              <h2 className="text-4xl md:text-5xl font-bold text-black leading-tight relative inline-block">
+              <h2 className="text-xl md:text-4xl font-bold text-black leading-tight relative inline-block">
                 Message from the{" "}
                 <span className="relative inline-block">
-                  CEO
-                  <div className="w-26 h-3 bg-gradient-to-r from-gray-400 to-gray-800 absolute right-0 left-auto bottom-0 translate-y-full"></div>
+                  CEO & Founder
+                  <div className="w-68 h-3 bg-gradient-to-r from-gray-400 to-gray-800 absolute right-0 left-auto bottom-0 translate-y-full"></div>
                 </span>
               </h2>
             </div>
@@ -21,11 +21,12 @@ const CEO = () => {
             <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-5">
               <p>
                 I didn't build AAUCo in a moment of triumph. I built it along
-                with fellow believers and visionaries in the quiet - on a worn
-                sheet of manila paper, with a fading pentel pen, during the
-                stillness of a world in lockdown. There was no applause, no
-                blueprint, no certainty. Just a woman listening to the silence,
-                trusting that something meaningful was trying to speak.
+                with fellow believers and visionaries in the quiet 21st floor of
+                a condo unit in the heart of Manila, on a worn sheet of manila
+                paper, with a fading pentel pen, during the stillness of a world
+                in lockdown. There was no applause, no blueprint, no certainty.
+                Just a woman listening to the silence, trusting that something
+                meaningful was trying to speak.
               </p>
               <p className="pl-4 bg-gray-100 py-3 px-6 italic border-l-[6px] [border-image:linear-gradient(to_bottom, #facc15,#f59e42,#eab308)_1]">
                 I believed that this path was never inherited – instead, it
