@@ -20,6 +20,12 @@ const profiles = [
     name: "ANITA LARIOVA",
     image: "/images/collective/anita.jpg",
   },
+
+  {
+    name: "???",
+    image: "/images/collective/who.jpg",
+  },
+
   {
     name: "Johnric Vargas",
     image: "/images/collective/johnric.jpg",
@@ -36,7 +42,7 @@ const Collective = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
       setCurrent((prev) => (prev + 1) % totalSlides);
-    }, 4000);
+    }, 7000);
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
