@@ -1,10 +1,5 @@
 "use client";
 import Image from "next/image";
-import nextImg from "/public/images/documentation/Categories=Nextjs.svg";
-import reactImg from "/public/images/documentation/Categories=React.svg";
-import tailwindImg from "/public/images/documentation/Categories=Tailwind.svg";
-import nextauthImg from "/public/images/documentation/nextauth.png";
-import typescriptImg from "/public/images/documentation/Categories=Typescript.svg";
 import axiosImg from "/public/images/documentation/axios.svg";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useState } from "react";
@@ -15,33 +10,9 @@ export const Introduction = () => {
   const PackageVersions = [
     {
       id: "1",
-      packageName: "NextJs",
-      img: nextImg,
-      version: "15.0.3",
-    },
-    {
-      id: "2",
-      packageName: "React",
-      img: reactImg,
-      version: "18.3.1",
-    },
-    {
-      id: "3",
-      packageName: "Tailwindcss",
-      img: tailwindImg,
-      version: "3.4.1",
-    },
-    {
-      id: "4",
-      packageName: "NextAuth",
-      img: nextauthImg,
-      version: "4.24.7",
-    },
-    {
-      id: "5",
-      packageName: "Typescript",
-      img: typescriptImg,
-      version: "5.6.3",
+      packageName: "Axios",
+      img: axiosImg,
+      version: "latest",
     },
   ];
   return (
@@ -102,8 +73,9 @@ export const Introduction = () => {
       </div>
 
       <div
-        className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 max-w-xs ${docNavbarOpen ? "translate-x-0" : "translate-x-full"
-          } z-50`}
+        className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 max-w-xs ${
+          docNavbarOpen ? "translate-x-0" : "translate-x-full"
+        } z-50`}
       >
         <div className="flex items-center justify-between p-4">
           <h2 className="text-lg font-bold text-midnight_text dark:text-black">
