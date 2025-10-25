@@ -20,11 +20,11 @@ const AdeonaPage = () => {
           <div className="max-w-2xl">
             <h1 className="font-bold text-white mb-4">ADEONA</h1>
             <p className="text-xl text-white mb-8 md:text-2xl lg:text-3xl font-light tracking-wide">
-              The Goddess of Abode and Keeper of Presence
+              The Goddess of Abode <br /> and Keeper of Presence
             </p>
             <p className="text-lg text-white mb-6 md:text-xl font-light">
-              Where brands stop wandering and start resonating. Your story
-              deserves a place. Your brand deserves a voice.
+              Where brands stop wandering and start resonating. <br /> Your
+              story deserves a place. <br /> Your brand deserves a voice.
             </p>
           </div>
         </div>

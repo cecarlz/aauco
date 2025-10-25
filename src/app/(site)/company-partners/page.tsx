@@ -29,8 +29,9 @@ const CompanyPartnersPage = () => {
               OUR GLOBAL NETWORK
             </p>
 
-            <p className="text-sm  text-white mb-8 md:text-3xl lg:text-4xl font-light tracking-wide">
-              AAUCo is built on trust, transformation, and shared missions.
+            <p className="text-xs  text-white mb-8 md:text-3xl lg:text-4xl font-light tracking-wide">
+              AAUCo is built on trust, transformation, <br /> and shared
+              mission.
             </p>
           </div>
         </div>

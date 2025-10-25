@@ -40,7 +40,7 @@ const CompetitionsPlatformsPage = () => {
               voice becomes a vessel for transformation.
             </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">
-              Welcome to the orbit of Competitions & Platforms
+              Welcome to the orbit of competitions & platforms
             </h2>
             <p>
               AAUCo’s cosmic playground for truth, courage, and creative
