@@ -5,11 +5,16 @@ import Image from "next/image";
 
 const profiles = [
   {
+    name: "Jennifer Montero ",
+    image: "/images/collective/jenni.jpg",
+  },
+
+  {
     name: "Robin Serrano",
     image: "/images/collective/robin.jpg",
   },
   {
-    name: "Dr Muhammad Mustafa",
+    name: "Dr. Muhammad Mustafa",
     image: "/images/collective/dr muhammad.jpg",
   },
   {
@@ -35,8 +40,13 @@ const profiles = [
 const Collective = () => {
   const [current, setCurrent] = React.useState(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const cardsToShow = 3;
-  const totalSlides = Math.ceil(profiles.length / cardsToShow);
+
+  // Custom slide distribution: 4 cards on first slide, 3 on second
+  const slides = [
+    profiles.slice(0, 4), // First 4 profiles
+    profiles.slice(4, 7), // Remaining 3 profiles
+  ];
+  const totalSlides = slides.length;
 
   React.useEffect(() => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -54,6 +64,23 @@ const Collective = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-gray-900 text-center">
           THE AAUCO QUANTUM COLLECTIVE
         </h2>
+        <div className="max-w-7xl mx-auto text-gray-700 text-base md:text-sm space-y-2 my-10">
+          <p className="text-center text-justify">
+            The Quantum Collective is a global circle of seven men, each placed
+            with intention and purpose. As a team we are moving with mastery,
+            trust, and shared conviction. From the Philippines to Canada, across
+            Asia and the Pacific, Europe and the Middle East every member brings
+            a distinct strength that fuels AAUCo’s mission forward. These are
+            women and men who walk with me in clarity and courage, committed to
+            bridging gaps, creating hope, and carrying the legacy of AAUCo with
+            joy, freedom, and love for life and service. <br /> <br /> Six have
+            already stepped into place, each one a companion in purpose. The
+            seventh is on the way, drawn by something greater than invitation.
+            Together, we are positioned to serve across continents, ready to
+            build what the world needs next. This is the Quantum Collective,
+            where vision breathes, and legacy lives.
+          </p>
+        </div>
         <div className="relative overflow-hidden">
           {/* Previous Arrow */}
           <button
@@ -82,27 +109,28 @@ const Collective = () => {
             className="flex transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${current * 100}%)` }}
           >
-            {Array.from({ length: totalSlides }).map((_, slideIdx) => (
-              <div key={slideIdx} className="min-w-full flex gap-3 px-12">
-                {profiles
-                  .slice(slideIdx * cardsToShow, (slideIdx + 1) * cardsToShow)
-                  .map((profile, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-white rounded-2xl shadow-lg flex flex-col items-center w-72 mx-auto"
-                    >
-                      <Image
-                        src={profile.image}
-                        alt={profile.name}
-                        width={288}
-                        height={288}
-                        className="rounded-t-2xl object-cover w-full aspect-square"
-                      />
-                      <h3 className="text-lg font-bold p-5 text-gray-900 text-center">
-                        {profile.name}
-                      </h3>
-                    </div>
-                  ))}
+            {slides.map((slideProfiles, slideIdx) => (
+              <div
+                key={slideIdx}
+                className="min-w-full flex gap-6 px-12 justify-center"
+              >
+                {slideProfiles.map((profile, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-white rounded-2xl shadow-lg flex flex-col items-center w-64 mx-2"
+                  >
+                    <Image
+                      src={profile.image}
+                      alt={profile.name}
+                      width={256}
+                      height={256}
+                      className="rounded-t-2xl object-cover w-full aspect-square"
+                    />
+                    <h3 className="text-lg font-bold p-5 text-gray-900 text-center">
+                      {profile.name}
+                    </h3>
+                  </div>
+                ))}
               </div>
             ))}
           </div>

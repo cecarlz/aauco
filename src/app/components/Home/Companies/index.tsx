@@ -41,11 +41,97 @@ const Companies = () => {
           <p className="text-lg text-gray-800 font-bold mb-6">
             THROUGH FOUR PILLARS:
           </p>
-          <ul className="text-lg text-gray-800 list-disc list-inside mb-6">
-            <li>Abeona (startups)</li>
-            <li>Adeona (branding)</li>
-            <li>Unlimited Service (incubation)</li>
-            <li>Company & Competitions (partners and platforms)</li>
+          <ul className="grid grid-cols-2 md:grid-cols-2 gap-2 mb-6">
+            <li className="flex flex-col items-center p-4 text-center border-2 rounded-xl bg-white/50 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow duration-300">
+              {/* Diamond Icon */}
+              <svg
+                className="h-16 w-16 mb-3 text-gray-700 drop-shadow-md"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon
+                  points="32,8 56,32 32,56 8,32"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  fill="none"
+                />
+              </svg>
+              <span className="text-lg text-gray-900 font-bold mb-2">
+                Abeona
+              </span>
+              <ul className="list-disc list-inside text-xs font-normal text-gray-700 text-left">
+                <li>startups</li>
+              </ul>
+            </li>
+            <li className="flex flex-col items-center p-4 text-center border-2 rounded-xl bg-white/50  transition-shadow duration-300">
+              {/* Star Icon */}
+              <svg
+                className="h-16 w-16 mb-3 text-gray-700 drop-shadow-md"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon
+                  points="32,8 39,26 58,26 42,38 48,56 32,45 16,56 22,38 6,26 25,26"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  fill="none"
+                />
+              </svg>
+              <span className="text-lg text-gray-900 font-bold mb-2">
+                Adeona
+              </span>
+              <ul className="list-disc list-inside text-xs font-normal text-gray-700 text-left">
+                <li>branding</li>
+              </ul>
+            </li>
+            <li className="flex flex-col items-center p-4 text-center border-2 rounded-xl bg-white/50 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow duration-300">
+              {/* Pentagon Icon */}
+              <svg
+                className="h-16 w-16 mb-3 text-gray-700 drop-shadow-md"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon
+                  points="32,8 56,26 46,56 18,56 8,26"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  fill="none"
+                />
+              </svg>
+              <span className="text-lg text-gray-900 font-bold mb-2">
+                Unlimited Service
+              </span>
+              <ul className="list-disc list-inside text-xs font-normal text-gray-700 text-left">
+                <li>incubation</li>
+                <li>internationalization</li>
+                <li>inspired stewardship</li>
+              </ul>
+            </li>
+            <li className="flex flex-col items-center p-4 text-center border-2 rounded-xl bg-white/50 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow duration-300">
+              {/* Octagon Icon */}
+              <svg
+                className="h-16 w-16 mb-3 text-gray-700 drop-shadow-md"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon
+                  points="20,8 44,8 56,20 56,44 44,56 20,56 8,44 8,20"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  fill="none"
+                />
+              </svg>
+              <span className="text-lg text-gray-900 font-bold mb-2">
+                Company & Competitions
+              </span>
+              <ul className="list-disc list-inside text-xs font-normal text-gray-700 text-left">
+                <li>partners and platforms</li>
+              </ul>
+            </li>
           </ul>
           <p className="text-lg text-gray-800">
             AAUCo offers a full-circle experience for those who build with

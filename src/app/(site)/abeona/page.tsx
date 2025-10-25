@@ -21,41 +21,53 @@ const AbeonaPage = () => {
           <div className="max-w-3xl">
             <h1 className="font-bold text-white mb-6">ABEONA</h1>
             <p className="text-xl text-white mb-8 md:text-2xl lg:text-3xl font-light tracking-wide">
-              WHERE PURPOSEFUL JOURNEYS BEGIN:
+              Your Gateway to Purposeful Global Movement
             </p>
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold text-white md:text-4xl">
-                SDG'S
-              </h2>
-              <p className="text-xl text-white md:text-2xl">
-                Ventures Launching
-              </p>
-              <p className="text-xl text-white md:text-2xl">
-                through AAUCO Framework
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* AAU Framework Section */}
+      {/* About Abeona Section */}
+      <section className="py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-slate-100">
+        <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-6 text-center">
+            <p>
+              Abeona is AAUCo's dedicated pathway for ventures ready to expand
+              with clarity, care, and global relevance. Inspired by the goddess
+              of travel and new beginnings, Abeona welcomes startups, clients,
+              and partners into a framework designed to incubate innovation,
+              elevate advocacy, and activate futures.
+            </p>
+            <p className="font-semibold text-xl text-black">
+              Whether you're launching, scaling, or collaborating, Abeona offers
+              a space where ideas move with meaning—and where every journey is
+              guided by purpose.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Framework Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Title */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 md:text-5xl">
-              AAUCo Framework
+            <h2 className="text-4xl font-bold text-black md:text-5xl mb-4">
+              Framework for Engagement
             </h2>
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              Three pillars guiding ventures toward meaningful global impact
+            </p>
           </div>
 
           {/* Three Column Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-7xl mx-auto">
             {/* Card 1: Applied Futures */}
-            <div className="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white border-2 border-blue-200 rounded-xl p-8 hover:shadow-2xl hover:border-blue-400 hover:-translate-y-2 transition-all duration-300">
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
                   <svg
-                    className="w-8 h-8 text-blue-600"
+                    className="w-10 h-10 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -69,31 +81,41 @@ const AbeonaPage = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                 Applied Futures
               </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-center">
-                  <span className="mr-2 text-blue-600">•</span>
-                  Eduverse
-                </li>
-                <li className="flex items-center">
-                  <span className="mr-2 text-blue-600">•</span>
-                  Wellspring
-                </li>
-                <li className="flex items-center">
-                  <span className="mr-2 text-blue-600">•</span>
-                  ImpactLab
-                </li>
-              </ul>
+              <div className="space-y-4 text-gray-700">
+                <div>
+                  <p className="font-semibold text-lg text-blue-700 mb-1">
+                    Eduverse
+                  </p>
+                  <p className="text-sm">Immersive learning ecosystems</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-lg text-blue-700 mb-1">
+                    Wallspring
+                  </p>
+                  <p className="text-sm">
+                    Community resilience and design labs
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-lg text-blue-700 mb-1">
+                    Impact Lab
+                  </p>
+                  <p className="text-sm">
+                    Venture prototyping and systems building
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Card 2: Advocacy & Awareness */}
-            <div className="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white border-2 border-green-200 rounded-xl p-8 hover:shadow-2xl hover:border-green-400 hover:-translate-y-2 transition-all duration-300">
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg">
                   <svg
-                    className="w-8 h-8 text-green-600"
+                    className="w-10 h-10 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -107,31 +129,41 @@ const AbeonaPage = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                 Advocacy & Awareness
               </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-center">
-                  <span className="mr-2 text-green-600">•</span>
-                  Media
-                </li>
-                <li className="flex items-center">
-                  <span className="mr-2 text-green-600">•</span>
-                  SDGs
-                </li>
-                <li className="flex items-center">
-                  <span className="mr-2 text-green-600">•</span>
-                  Cultural Diplomacy
-                </li>
-              </ul>
+              <div className="space-y-4 text-gray-700">
+                <div>
+                  <p className="font-semibold text-lg text-green-700 mb-1">
+                    Media
+                  </p>
+                  <p className="text-sm">
+                    Strategic storytelling and campaigns
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-lg text-green-700 mb-1">
+                    Sustainable Development Goals
+                  </p>
+                  <p className="text-sm">Aligned action and reporting</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-lg text-green-700 mb-1">
+                    Cultural Diplomacy
+                  </p>
+                  <p className="text-sm">
+                    Cross-border dialogue and engagement
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Card 3: University Incubation */}
-            <div className="bg-white border-2 border-gray-200 rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white border-2 border-purple-200 rounded-xl p-8 hover:shadow-2xl hover:border-purple-400 hover:-translate-y-2 transition-all duration-300">
               <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
                   <svg
-                    className="w-8 h-8 text-purple-600"
+                    className="w-10 h-10 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -145,23 +177,31 @@ const AbeonaPage = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                 University Incubation
               </h3>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-center">
-                  <span className="mr-2 text-purple-600">•</span>
-                  Academic Innovation
-                </li>
-                <li className="flex items-center">
-                  <span className="mr-2 text-purple-600">•</span>
-                  Internationalization
-                </li>
-                <li className="flex items-center">
-                  <span className="mr-2 text-purple-600">•</span>
-                  Leadership
-                </li>
-              </ul>
+              <div className="space-y-4 text-gray-700">
+                <div>
+                  <p className="font-semibold text-lg text-purple-700 mb-1">
+                    Academic Innovation
+                  </p>
+                  <p className="text-sm">Future-ready curriculum design</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-lg text-purple-700 mb-1">
+                    Internationalization
+                  </p>
+                  <p className="text-sm">Global mobility and partnerships</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-lg text-purple-700 mb-1">
+                    Circular Economic Leadership
+                  </p>
+                  <p className="text-sm">
+                    Regenerative models and policy shaping
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

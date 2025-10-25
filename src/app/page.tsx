@@ -8,6 +8,7 @@ import Testimonial from "@/app/components/Home/Testimonials";
 import ContactForm from "@/app/components/ContactForm";
 import Newsletter from "@/app/components/Home/Newsletter";
 import Collective from "@/app/components/Home/Collective";
+import QuantumGuild from "@/app/components/Home/QuantumGuild";
 
 import { Metadata } from "next";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Courses />
       <CEO />
       <Collective />
+      <QuantumGuild />
     </main>
   );
 }

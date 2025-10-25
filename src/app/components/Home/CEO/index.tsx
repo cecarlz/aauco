@@ -10,15 +10,15 @@ const CEO = () => {
           <div className="flex-1 max-w-3xl">
             <div className="mb-8">
               <h2 className="text-xl md:text-4xl font-bold text-black leading-tight relative inline-block">
-                Message from the{" "}
                 <span className="relative inline-block">
-                  CEO & Founder
-                  <div className="w-68 h-3 bg-gradient-to-r from-gray-400 to-gray-800 absolute right-0 left-auto bottom-0 translate-y-full"></div>
-                </span>
+                  Message
+                  <div className="w-42 h-3 bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-500 absolute left-0 right-auto bottom-0 translate-y-full"></div>
+                </span>{" "}
+                from the CEO & Founder
               </h2>
             </div>
 
-            <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-5">
+            <div className="text-gray-700 text-base md:text-sm leading-relaxed space-y-5">
               <p>
                 I didn't build AAUCo in a moment of triumph. I built it along
                 with fellow believers and visionaries in the quiet 21st floor of
@@ -28,7 +28,7 @@ const CEO = () => {
                 Just a woman listening to the silence, trusting that something
                 meaningful was trying to speak.
               </p>
-              <p className="pl-4 bg-gray-100 py-3 px-6 italic border-l-[6px] [border-image:linear-gradient(to_bottom, #facc15,#f59e42,#eab308)_1]">
+              <p className="pl-4 bg-gray-100 py-3 px-6 italic border-l-[6px] [border-image:linear-gradient(to_bottom,_#fde047,#f59e42,#facc15)_1]">
                 I believed that this path was never inherited – instead, it
                 appeared, with faith - slowly, painfully, and with purpose. I
                 climbed through doubt, through systems that weren't built for
@@ -97,7 +97,7 @@ const CEO = () => {
             {/* Author Info Card */}
             <div className="mt-10 p-6 bg-gradient-to-r from-gray-100 to-gray-200 rounded-xl border border-gray-300 shadow-sm">
               <div className="flex items-center gap-4">
-                <div className="w-1 h-16 bg-gradient-to-b from-gray-700 to-black rounded-full"></div>
+                <div className="w-1 h-16 bg-gradient-to-b from-yellow-300 via-orange-400 to-yellow-500 rounded-full"></div>
                 <div>
                   <p className="font-bold text-xl md:text-2xl text-black mb-1">
                     Jennifer "Jenni" Montero
@@ -123,6 +123,84 @@ const CEO = () => {
                   height={540}
                   className="rounded-2xl object-cover shadow-2xl w-full h-auto ring-4 ring-gray-100"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Carl's Journey Card */}
+        <div className="mt-16">
+          <div className="flex flex-col lg:flex-row items-center bg-gradient-to-br from-white via-slate-50 to-white rounded-xl border border-gray-300 shadow-md overflow-hidden max-w-5xl mx-auto">
+            {/* Left: Image */}
+            <div className="flex-shrink-0 w-full lg:w-[340px] xl:w-[400px] p-4 lg:p-6">
+              <div className="relative">
+                <div className="absolute -inset-2 bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-500 rounded-2xl opacity-20 blur-xl"></div>
+                <div className="relative">
+                  <Image
+                    src="/images/carl.jpg"
+                    alt="Carl with his dog on a mountain at sunrise, symbolizing stewardship and resilience"
+                    width={600}
+                    height={600}
+                    className="rounded-xl object-cover shadow-xl w-full h-auto ring-4 ring-yellow-100"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Right: Content */}
+            <div className="flex-1 p-4 lg:p-6">
+              <h3 className="text-2xl md:text-4xl font-bold text-black mb-6">
+                Carl's Journey of Inspired Stewardship
+              </h3>
+              <div className="text-gray-700 text-sm md:text-sm leading-relaxed space-y-1">
+                <p>Carl's story is part of AAUCo's climb.</p>
+                <p>
+                  He began as a working student in marketing—quiet, focused, and
+                  unwavering. When the world shifted during the pandemic, Carl
+                  stayed. Virtually, he helped build what didn't yet exist. He
+                  believed in the vision before it had form and shaped its
+                  foundation with steady hands.
+                </p>
+                <p>
+                  His contribution wasn't loud. It was lasting. Carl seldom
+                  spoke, but his work spoke volumes. From zero resources to a
+                  thriving global platform, his fingerprints are on every
+                  system, every post, every page. Like blood flowing through the
+                  body, his presence runs through AAUCo's digital
+                  core—connecting continents, powering growth, and holding the
+                  structure together.
+                </p>
+                <p>
+                  His technical precision and quiet loyalty helped AAUCo expand
+                  across Canada, the Middle East, the Philippines, Asia Pacific,
+                  India, Pakistan, and Latvia.
+                </p>
+
+                <p className="pl-3 mt-2 bg-gray-100 py-3 px-6 italic border-l-[6px] [border-image:linear-gradient(to_bottom,_#facc15,#f59e42,#eab308)_1] mb-2">
+                  “Inspired Stewardship is not just a concept to me. It is the
+                  way I build. Whether I am navigating a mountain trail or
+                  designing a digital system, I create with care—for people, for
+                  platforms, and for the planet. That mindset was shaped by Ms.
+                  Jenni, my mentor and guide, whose vision for AAUCo—rooted in
+                  ASEAN, Africa, Canada, the Middle East, and the Pacific—taught
+                  me that purpose must lead not only our practice but our way of
+                  life. This is why I continue to walk with AAUCo, where ideas
+                  are not only incubated but elevated into global impact.”
+                  <div className="font-semibold mt-5 text-black text-base md:text-sm">
+                    — Carl, AAUCO Technical Specialist
+                  </div>
+                </p>
+
+                <p>
+                  The mountain image featured on our website isn't symbolic.
+                  It's real. Captured through Carl's lens during one of his
+                  climbs, it reflects the spirit of AAUCo: resilience,
+                  elevation, and the quiet strength of those who build not for
+                  applause but for purpose.
+                </p>
+                <p>
+                  Carl's work is now part of the view—guiding the next
+                  generation as they climb.
+                </p>
               </div>
             </div>
           </div>

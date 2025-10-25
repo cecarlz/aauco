@@ -30,49 +30,112 @@ const CompetitionsPlatformsPage = () => {
       </section>
 
       {/* Quick Links Section */}
-      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Explore the Competition
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Navigate through our competition journey from start to finish
+      <section className="py-20 bg-white">
+        <div className="container max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-8 text-lg md:text-xl leading-relaxed text-gray-700">
+            <p>
+              AAUCo’s Competitions & Platforms are designed like
+              launchpads—spacious, intentional, and built for bold ideas to take
+              flight. This is where creativity meets courage, and where every
+              voice becomes a vessel for transformation.
             </p>
-          </div>
-
-          {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { title: "Competition Timeline", icon: "tabler:calendar-event", color: "blue" },
-              { title: "Mechanics & Rubrics", icon: "tabler:clipboard-list", color: "green" },
-              { title: "Finalist Gallery", icon: "tabler:photo", color: "purple" },
-              { title: "Bangkok Finale", icon: "tabler:trophy", color: "amber" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="group relative bg-white border-2 border-gray-200 rounded-xl p-8 flex flex-col items-center justify-center text-center shadow-md hover:shadow-2xl hover:border-gray-300 hover:-translate-y-2 transition-all duration-300 cursor-pointer overflow-hidden"
-              >
-                {/* Subtle background gradient on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                {/* Icon */}
-                <div className="relative z-10 mb-4">
-                  <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 group-hover:scale-110 transition-transform duration-300">
-                    <Icon icon={item.icon} className="text-gray-700 text-4xl" />
-                  </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">
+              Welcome to the orbit of Competitions & Platforms
+            </h2>
+            <p>
+              AAUCo’s cosmic playground for truth, courage, and creative
+              elevation. Inspired by the spirit of SpaceX and the soul of
+              mindful design, this space is not just about winning. It’s about
+              awakening.
+            </p>
+            <p>
+              We build platforms that feel like liftoff. We host competitions
+              that feel like ceremony. We invite voices that feel like prophecy.
+            </p>
+            <p>
+              Each initiative is crafted to be expansive, playful, and deeply
+              intentional—whether it’s a global pitch, a cultural showcase, a
+              youth-led summit, or a design sprint that reimagines futures.
+              These aren’t events. They’re experiences. They’re portals.
+            </p>
+            <h3 className="text-2xl md:text-3xl font-bold mt-12 mb-4 text-gray-900 text-center">
+              Our framework is built on three launch zones:
+            </h3>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Creative Missions */}
+              <div className="bg-gradient-to-br from-pink-50 via-white to-purple-50 border-2 border-pink-200 rounded-2xl p-6 flex flex-col">
+                <div className="flex justify-center mb-4">
+                  <span className="text-3xl">🚀</span>
                 </div>
-                
-                {/* Title */}
-                <h3 className="relative z-10 text-xl font-bold text-gray-900 group-hover:text-gray-800 transition-colors duration-300">
-                  {item.title}
-                </h3>
-
-                {/* Decorative element */}
-                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-gray-300 via-gray-400 to-gray-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2 text-center">
+                  Creative Missions
+                </h4>
+                <p className="text-pink-700 font-semibold mb-4 text-center">
+                  Where imagination becomes infrastructure.
+                </p>
+                <ul className="space-y-2 text-gray-700 list-disc list-inside">
+                  <li>Design labs</li>
+                  <li>Storytelling challenges</li>
+                  <li>Cultural showcases</li>
+                  <li>Language and fluency games</li>
+                </ul>
               </div>
-            ))}
+              {/* Impact Orbits */}
+              <div className="bg-gradient-to-br from-cyan-50 via-white to-blue-50 border-2 border-cyan-200 rounded-2xl p-6 flex flex-col">
+                <div className="flex justify-center mb-4">
+                  <span className="text-3xl">🌌</span>
+                </div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2 text-center">
+                  Impact Orbits
+                </h4>
+                <p className="text-cyan-700 font-semibold mb-4 text-center">
+                  Where ideas become movements.
+                </p>
+                <ul className="space-y-2 text-gray-700 list-disc list-inside">
+                  <li>SDG-aligned competitions</li>
+                  <li>Youth-led innovation platforms</li>
+                  <li>Community resilience sprints</li>
+                  <li>Circular economy prototypes</li>
+                </ul>
+              </div>
+              {/* Academic Launchpads */}
+              <div className="bg-gradient-to-br from-amber-50 via-white to-orange-50 border-2 border-amber-200 rounded-2xl p-6 flex flex-col">
+                <div className="flex justify-center mb-4">
+                  <span className="text-3xl">🛰️</span>
+                </div>
+                <h4 className="text-xl font-bold text-gray-900 mb-2 text-center">
+                  Academic Launchpads
+                </h4>
+                <p className="text-amber-700 font-semibold mb-4 text-center">
+                  Where learning becomes legacy.
+                </p>
+                <ul className="space-y-2 text-gray-700 list-disc list-inside">
+                  <li>University-hosted pitch events</li>
+                  <li>Curriculum-based challenges</li>
+                  <li>Internationalization showcases</li>
+                  <li>Applied futures simulations</li>
+                </ul>
+              </div>
+            </div>
+            <div className="text-xl md:text-2xl space-y-2 text-gray-700 text-center mt-12">
+              <p>
+                Every platform is a vessel. Every competition is a
+                constellation. Every participant is a pioneer.
+              </p>
+              <p className="font-bold">
+                This is AAUCo’s Competitions & Platforms.
+              </p>
+              <p>
+                Where bold ideas lift off. Where truth is celebrated. Where
+                transformation is the destination.
+              </p>
+              <p className="text-base text-gray-500 mt-4">
+                Let me know if you'd like this styled into a visual scroll,
+                interactive challenge map, or branded campaign series. We can
+                also create a digital badge system for participants and hosts
+                across the network.
+              </p>
+            </div>
           </div>
         </div>
       </section>
