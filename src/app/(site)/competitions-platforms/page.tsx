@@ -36,9 +36,9 @@ const CompetitionsPlatformsPage = () => {
             {/* SVG Icon Left Side replaced with image */}
             <div className="flex-shrink-0 mb-8 md:mb-0">
               <img
-                src="/images/competition/competition.svg"
+                src="/images/about/competition.svg"
                 alt="Competition Icon"
-                className="w-32 h-32 lg:w-40 lg:h-40"
+                className="w-75 h-75"
                 draggable="false"
               />
             </div>
