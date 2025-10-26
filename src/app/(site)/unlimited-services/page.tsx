@@ -41,15 +41,27 @@ const UnlimitedServicesPage = () => {
       {/* Intro Section */}
       <section className="py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-slate-100">
         <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-gray-700 text-base md:text-lg leading-relaxed space-y-4">
-            <p className="text-xl md:text-2xl font-semibold text-black">
-              Whether you're building a university, launching a venture, or
-              leading a cultural wave—we've got you.
-            </p>
-            <p>
-              Here are our top three service constellations, each packed with
-              possibilities:
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            {/* SVG Icon Left Side */}
+            <div className="flex-shrink-0 mb-8 md:mb-0">
+              <img
+                src="/images/about/unlimited-services.svg"
+                alt="Unlimited Services Icon"
+                className="w-75 h-75 "
+                draggable="false"
+              />
+            </div>
+            {/* Text Content Right Side */}
+            <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4">
+              <p className="text-xl md:text-2xl font-semibold text-black">
+                Whether you're building a university, launching a venture, or
+                leading a cultural wave we've got you.
+              </p>
+              <p>
+                Here are our top three service constellations, each packed with
+                possibilities:
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -30,19 +30,30 @@ const AbeonaPage = () => {
       {/* About Abeona Section */}
       <section className="py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-slate-100">
         <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-6 text-center">
-            <p>
-              Abeona is AAUCo's dedicated pathway for ventures ready to expand
-              with clarity, care, and global relevance. Inspired by the goddess
-              of travel and new beginnings, Abeona welcomes startups, clients,
-              and partners into a framework designed to incubate innovation,
-              elevate advocacy, and activate futures.
-            </p>
-            <p className="font-semibold text-xl text-black">
-              Whether you're launching, scaling, or collaborating, Abeona offers
-              a space where ideas move with meaning—and where every journey is
-              guided by purpose.
-            </p>
+          <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-6 flex flex-col md:flex-row items-center justify-center text-left">
+            <div className="flex-shrink-0 flex justify-center items-center mr-0 md:mr-8 mb-6 md:mb-0">
+              <img
+                src="/images/about/abeona.svg"
+                alt="Abeona Icon"
+                className="w-75 h-75"
+                draggable="false"
+              />
+            </div>
+            <div className="flex-1">
+              <p>
+                Abeona is AAUCo's dedicated pathway for ventures ready to expand
+                with clarity, care, and global relevance. Inspired by the
+                goddess of travel and new beginnings, Abeona welcomes startups,
+                clients, and partners into a framework designed to incubate
+                innovation, elevate advocacy, and activate futures.
+              </p>{" "}
+              <br />
+              <p className="font-semibold text-xl text-black">
+                Whether you're launching, scaling, or collaborating, Abeona
+                offers a space where ideas move with meaning—and where every
+                journey is guided by purpose.
+              </p>
+            </div>
           </div>
         </div>
       </section>

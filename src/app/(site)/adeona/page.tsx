@@ -31,45 +31,60 @@ const AdeonaPage = () => {
       </section>
 
       {/* About Adeona Section */}
-      <section className="py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-slate-100">
+      <section className="py-10 lg:py-15 bg-gradient-to-br from-slate-50 via-white to-slate-100">
         <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-6">
-            <p>
-              Welcome to Adeona, the goddess of abode and the keeper of
-              presence. In AAUCo's universe, she is the one who holds space for
-              your story to settle, shine, and stretch across time. This is
-              where brands stop wandering and start resonating.
-            </p>
-            <p>
-              Adeona is not just a service. She's a vibe. A digital hearth where
-              your institutional identity is curated, celebrated, and amplified.
-              Whether you're a university, a movement, or a visionary founder,
-              Adeona helps you build a home for your legacy—one caption, one
-              milestone, one scroll-stopping moment at a time.
-            </p>
-            <p>
-              We craft social media ecosystems that speak your truth. We build
-              hashtag vaults that echo your values. We design milestone features
-              that make your journey visible, vibrant, and unforgettable.
-            </p>
-            <p className="font-semibold text-xl text-black">
-              This is where your brand stops being a logo and starts becoming a
-              landmark.
-            </p>
-            <p>
-              So if you're ready to settle into your story, to build a presence
-              that feels like home and moves like magic—Adeona is waiting.
-            </p>
-            <p className="text-center text-xl font-semibold text-yellow-700 mt-8">
-              Your story deserves a place. Your brand deserves a voice. Adeona
-              is both.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            {/* SVG Icon Left Side replaced with image */}
+            <div className="flex-shrink-0 mb-8 md:mb-0">
+              <img
+                src="/images/about/adeona.svg"
+                alt="Adeona Icon"
+                className="w-75 h-75"
+                draggable="false"
+              />
+            </div>
+            {/* Text Content Right Side */}
+            <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-6">
+              <p>
+                Welcome to Adeona, the goddess of abode and the keeper of
+                presence. In AAUCo's universe, she is the one who holds space
+                for your story to settle, shine, and stretch across time. This
+                is where brands stop wandering and start resonating.
+              </p>
+              <p>
+                Adeona is not just a service. She's a vibe. A digital hearth
+                where your institutional identity is curated, celebrated, and
+                amplified. Whether you're a university, a movement, or a
+                visionary founder, Adeona helps you build a home for your
+                legacy—one caption, one milestone, one scroll-stopping moment at
+                a time.
+              </p>
+              <p>
+                We craft social media ecosystems that speak your truth. We build
+                hashtag vaults that echo your values. We design milestone
+                features that make your journey visible, vibrant, and
+                unforgettable.
+              </p>
+              <p className="font-semibold text-xl text-black">
+                This is where your brand stops being a logo and starts becoming
+                a landmark.
+              </p>
+              <p>
+                So if you're ready to settle into your story, to build a
+                presence that feels like home and moves like magic—Adeona is
+                waiting.
+              </p>
+              <p className="text-3xl  font-black mt-8 bg-gradient-to-r from-yellow-500 via-orange-600 to-yellow-800 bg-clip-text text-transparent">
+                Your story deserves a place. <br /> Your brand deserves a voice.
+                <br /> Adeona is both.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gradient-to-br from-white via-slate-50 to-white">
+      <section className="py-12 bg-gradient-to-br from-white via-slate-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-black md:text-5xl mb-4">
