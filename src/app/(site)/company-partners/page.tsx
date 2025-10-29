@@ -90,14 +90,12 @@ const CompanyPartnersPage = () => {
                 are ready to walk with you.
               </p>
 
-              <p>This is the Company Partners Network</p>
-
-              <p>
-                Where legacy finds its collaborators. Where every connection is
-                a catalyst.
+              <p className="text-3xl font-black mt-8 leading-tight bg-gradient-to-r from-yellow-500 via-orange-600 to-yellow-800 bg-clip-text text-transparent drop-shadow-sm">
+                This is the Company Partners Network. <br />
+                Where legacy finds its collaborators. <br />
+                Where every connection is a catalyst. <br />
+                Where the future is built together.
               </p>
-
-              <p>Where the future is built together.</p>
             </div>
           </div>
         </div>

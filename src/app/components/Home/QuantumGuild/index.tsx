@@ -92,7 +92,7 @@ const QuantumGuild = () => {
           {/* Right: Image */}
           <div className="flex-1 flex justify-center items-center">
             <img
-              src="/images/about/quantum-guild.jpg"
+              src="/images/guild/guild.png"
               alt="Quantum Guild"
               className="rounded-2xl shadow-xl object-cover w-full max-w-md h-auto"
             />

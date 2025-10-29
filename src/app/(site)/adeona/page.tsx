@@ -29,9 +29,17 @@ const AdeonaPage = () => {
           </div>
         </div>
       </section>
-
-      {/* About Adeona Section */}
-      <section className="py-10 lg:py-15 bg-gradient-to-br from-slate-50 via-white to-slate-100">
+      {/* Custom SVG Divider - Full width, no gaps */}
+      <div className="relative -mt-1 md:-mt-4 z-10 w-full overflow-hidden">
+        <img
+          src="/images/line.svg"
+          alt="Decorative divider"
+          className="w-full h-auto min-w-full object-cover"
+          style={{ display: "block", margin: 0, padding: 0 }}
+        />
+      </div>
+      /{/* About Adeona Section */}
+      <section className="py-10 lg:py-15 bg-gradient-to-br from-slate-50 via-white to-slate-100 -mt-6">
         <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-10">
             {/* SVG Icon Left Side replaced with image */}
@@ -82,7 +90,6 @@ const AdeonaPage = () => {
           </div>
         </div>
       </section>
-
       {/* Features Section */}
       <section className="py-12 bg-gradient-to-br from-white via-slate-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

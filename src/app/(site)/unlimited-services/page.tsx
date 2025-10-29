@@ -53,9 +53,9 @@ const UnlimitedServicesPage = () => {
             </div>
             {/* Text Content Right Side */}
             <div className="text-gray-700 text-base md:text-lg leading-relaxed space-y-4">
-              <p className="text-xl md:text-2xl font-semibold text-black">
-                Whether you're building a university, launching a venture, or
-                leading a cultural wave we've got you.
+              <p className="text-lg md:text-2xl font-semibold text-black">
+                Whether you're building a university, <br /> launching a
+                venture, <br /> or leading a cultural wave we've got you.
               </p>
               <p>
                 Here are our top three service constellations, each packed with
@@ -115,7 +115,7 @@ const UnlimitedServicesPage = () => {
                 </div>
               </div>
               <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2 text-center">
-                Academic Innovation & Internationalization
+                Circular Economy Leadership
               </h3>
               <p className="text-base lg:text-lg text-purple-700 font-semibold mb-4 text-center">
                 Design futures that educate, elevate, and expand.
